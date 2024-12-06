@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo -->
+
+
+    <!-- SEO Básico -->
+    <title>Bingo Encantado</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="Santillana">
+    <meta name="author" content="Pastelito Soft">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./res/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./res/img/favicon.ico"> <!-- Icono para dispositivos Apple -->
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Manifiesto -->
+    <!--<link rel="manifest" href="/manifest.json">-->
+    <!-- Fuentes externas o Frameworks -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">-->
+    <!-- Fuente de Google -->
+</head>
+
+<body>
+
+    <div class="container-fuid contenedor-principal flip-container">
+
+        <audio id="magic" src="./res/sound/magic.mp3"></audio>
+
+        <div id="inicio" class="container-fluid tapa-libro">
+            <img id="img-inicio" class="img" src="./res/img/inicio.png" alt="imagen inicio">
+        </div>
+
+        <div id="hojas" class="container-fluid hojas-libro">
+            <!-- Aquí se insertan dinámicamente las imágenes de las hojas -->
+        </div>
+
+        <div id="fin" class="container-fluid contratapa-libro">
+            <img id="img-fin" class="img" src="./res/img/fin.png" alt="imagen fin">
+        </div>
+
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js" defer></script>
+</body>
+
+</html>
