@@ -39,6 +39,13 @@ body {
     padding: 0;
 }
 
+.img-fondo {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    object-fit: contain;
+}
+
 /* Z-Index configuration */
 #inicio {
     z-index: 300;
@@ -115,7 +122,7 @@ body {
 
     body,
     html {
-        overflow: auto;
+        overflow: hidden;
 
     }
 
@@ -124,15 +131,23 @@ body {
         max-height: 600px;
         border: solid whitesmoke 10px;
         border-radius: 25px;
+    }
+
+    .img-fondo {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: auto;
+        object-fit: contain;
     }
 }
 
 /* Móviles y tablets verticales (entre 481px y 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 999px) {
 
     body,
     html {
-        overflow: auto;
+        overflow: hidden;
 
     }
 
@@ -142,4 +157,13 @@ body {
         border: solid whitesmoke 10px;
         border-radius: 25px;
     }
+
+    .img-fondo {
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+
 }
